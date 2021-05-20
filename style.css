@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad,
+.ride-pad,
+.tom-pad {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: rgb(160, 211, 224);
+}
+.snare-pad {
+  background: rgb(255, 211, 224);
+}
+.hihat-pad {
+  background: rgb(149, 235, 149);
+}
+.ride-pad {
+  background: rgb(160, 111, 224);
+}
+.tom-pad {
+  background: rgb(214, 205, 79);
+}
