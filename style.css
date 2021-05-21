@@ -39,13 +39,13 @@ svg {
   background: rgb(255, 211, 224);
 }
 .hihat-pad {
-  background: rgb(149, 235, 149);
+  background: rgb(174, 235, 174);
 }
 .ride-pad {
   background: rgb(160, 111, 224);
 }
 .tom-pad {
-  background: rgb(214, 205, 79);
+  background: rgb(214, 209, 129);
 }
 
 .kick-pad.active {
@@ -61,7 +61,7 @@ svg {
   background: rgb(122, 41, 228);
 }
 .tom-pad.active {
-  background: rgb(214, 200, 4);
+  background: rgb(240, 204, 2);
 }
 
 .kick-track,
