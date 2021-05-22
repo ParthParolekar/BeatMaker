@@ -22,7 +22,7 @@
           <button data-track="0" class="mute kick-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
-          <select name="kick-select" id="kick-select">
+          <select name="kick-select" class="kick-select" id="kick-select">
             <option value="./allSounds/kick-classic.wav">Classic Kick</option>
             <option value="./allSounds/kick-808.wav">808 Kick</option>
             <option value="./allSounds/kick-heavy.wav">Heavy Kick</option>
@@ -46,7 +46,7 @@
           <button data-track="1" class="mute snare-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
-          <select name="snare-select" id="snare-select">
+          <select name="snare-select" class="snare-select" id="snare-select">
             <option value="./allSounds/snare-acoustic01.wav">
               Classic 01 Snare
             </option>
@@ -77,8 +77,8 @@
           <button data-track="2" class="mute hihat-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
-          <select name="hihat-select" id="hihat-select">
-            <option value="./allSounds/hihat-acoustic.wav">
+          <select name="hihat-select" class="hihat-select" id="hihat-select">
+            <option value="./allSounds/hihat-acoustic01.wav">
               Classic Hi-Hat
             </option>
             <option value="./allSounds/hihat-808.wav">808 Hi-Hat</option>
@@ -102,7 +102,7 @@
           <button data-track="3" class="mute ride-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
-          <select name="ride-select" id="ride-select">
+          <select name="ride-select" class="ride-select" id="ride-select">
             <option value="./allSounds/ride-acoustic01.wav">
               Classic 01 Ride
             </option>
@@ -129,7 +129,7 @@
           <button data-track="3" class="mute tom-volume">
             <i class="fas fa-volume-mute"></i>
           </button>
-          <select name="tom-select" id="tom-select">
+          <select name="tom-select" class="tom-select" id="tom-select">
             <option value="./allSounds/tom-808.wav">808 Tom</option>
             <option value="./allSounds/tom-acoustic01.wav">
               Classic 01 Tom
@@ -153,11 +153,31 @@
       <button class="play">Play</button>
     </div>
 
-    <audio class="kick-sound" src="./allSounds/kick-classic.wav"></audio>
-    <audio class="snare-sound" src="./allSounds/snare-acoustic01.wav"></audio>
-    <audio class="hihat-sound" src="./allSounds/hihat-acoustic01.wav"></audio>
-    <audio class="ride-sound" src="./allSounds/ride-acoustic01.wav"></audio>
-    <audio class="tom-sound" src="./allSounds/tom-acoustic01.wav"></audio>
+    <audio
+      id="kick-sound"
+      class="kick-sound"
+      src="./allSounds/kick-classic.wav"
+    ></audio>
+    <audio
+      id="snare-sound"
+      class="snare-sound"
+      src="./allSounds/snare-acoustic01.wav"
+    ></audio>
+    <audio
+      id="hihat-sound"
+      class="hihat-sound"
+      src="./allSounds/hihat-acoustic01.wav"
+    ></audio>
+    <audio
+      id="ride-sound"
+      class="ride-sound"
+      src="./allSounds/ride-acoustic01.wav"
+    ></audio>
+    <audio
+      id="tom-sound"
+      class="tom-sound"
+      src="./allSounds/tom-acoustic01.wav"
+    ></audio>
 
     <script src="/app.js"></script>
   </body>

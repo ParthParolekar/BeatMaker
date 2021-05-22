@@ -7,6 +7,11 @@ class DrumKit {
     this.hihatAudio = document.querySelector(".hihat-sound");
     this.rideAudio = document.querySelector(".ride-sound");
     this.tomAudio = document.querySelector(".tom-sound");
+    this.kickSelect = document.querySelector(".kick-select");
+    this.snareSelect = document.querySelector(".snare-select");
+    this.hihatSelect = document.querySelector(".hihat-select");
+    this.rideSelect = document.querySelector(".ride-select");
+    this.tomSelect = document.querySelector(".tom-select");
     this.index = 0;
     this.bpm = 150;
     this.isPlaying = null;
@@ -14,6 +19,27 @@ class DrumKit {
   acitvePad() {
     console.log(this);
   }
+  checkKickSound(e) {
+    console.log(e.target.value);
+    document.getElementById("kick-sound").src = e.target.value;
+  }
+  checkSnareSound(e) {
+    console.log(e.target.value);
+    document.getElementById("snare-sound").src = e.target.value;
+  }
+  checkHihatSound(e) {
+    console.log(e.target.value);
+    document.getElementById("hihat-sound").src = e.target.value;
+  }
+  checkRideSound(e) {
+    console.log(e.target.value);
+    document.getElementById("ride-sound").src = e.target.value;
+  }
+  checkTomSound(e) {
+    console.log(e.target.value);
+    document.getElementById("tom-sound").src = e.target.value;
+  }
+
   repeat() {
     let step = this.index % 8;
     const activeBars = document.querySelectorAll(`.b${step}`);
@@ -89,3 +115,9 @@ drumKit.playBtn.addEventListener("click", function () {
   drumKit.updateBtn();
   drumKit.start();
 });
+
+drumKit.kickSelect.addEventListener("click", drumKit.checkKickSound);
+drumKit.snareSelect.addEventListener("click", drumKit.checkSnareSound);
+drumKit.hihatSelect.addEventListener("click", drumKit.checkHihatSound);
+drumKit.rideSelect.addEventListener("click", drumKit.checkRideSound);
+drumKit.tomSelect.addEventListener("click", drumKit.checkTomSound);
